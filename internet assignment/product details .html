@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>product details</title>
+<style>
+    body{
+        background-color: black;
+       
+    #carousel-img {
+        width: 500px;  /* Adjust as needed */
+        height: auto;  /* Maintain aspect ratio */
+    }
+         }
+</style>
+<div class="product-details">
+   <marquee char="alternate"><b><h2 text="yellow">SPITFIRE ENERGY DRINK</h2></b> </marquee>
+    <p>Spitfire is a premium energy drink designed to give you a sustained energy boost. Our unique blend of vitamins, natural flavors, and a moderate amount of caffeine provides the perfect balance for your energy needs.</p>
+
+    <!-- Carousel -->
+    <div id="carousel">
+        <img id="carousel-img" src="OIG4.jpeg" alt="Image 1" size="5%">
+        <button onclick="changeImage(-1)">Previous</button>
+        <button onclick="changeImage(1)">Next</button>
+    </div>
+
+    <!-- Rest of the page... -->
+</div>
+
+<script>
+    var images = ["OIG4.fQPm44bLO7fA9A.jpeg", "OIG4.k.arXdet3.jpeg", "OIG4.jpeg", "OIG4 (1).jpeg"];
+    var currentImageIndex = 50;
+
+    function changeImage(direction) {
+        currentImageIndex = (currentImageIndex + direction + images.length) % images.length;
+        document.getElementById("carousel-img").src = images[currentImageIndex];
+    }
+</script>
+
+</head>
+
+<body text="white">
+    <div class="product-details">
+        <h2>Spitfire Energy Drink</h2>
+        <p>Spitfire is a premium energy drink designed to give you a sustained energy boost. Our unique blend of
+            vitamins, natural flavors, and a moderate amount of caffeine provides the perfect balance for your energy
+            needs.</p>
+
+        <h3>Ingredients</h3>
+        <p>Carbonated Water, High Fructose Corn Syrup, Citric Acid, Taurine, Natural and Artificial Flavors, Sodium
+            Citrate, Caffeine, Potassium Sorbate, Potassium Benzoate, Ginseng Root Extract, Guarana Seed Extract,
+            Inositol, Niacinamide, Calcium Pantothenate, Pyridoxine HCl, Vitamin B12.</p>
+
+        <h3>Nutritional Values</h3>
+        <p>Calories: 110, Total Fat: 0g, Sodium: 200mg, Total Carbohydrates: 27g, Sugars: 27g, Protein: 0g, Niacin:
+            100%, Vitamin B6: 100%, Vitamin B12: 100%, Pantothenic Acid: 100%.</p>
+
+        <h3>Customer Testimonials</h3>
+        <div class="testimonial">
+            <p>"Spitfire is my go-to energy drink. It gives me the boost I need without the crash later. Highly
+                recommend!"</p>
+            <!-- Add your customer's image here -->
+            <img src="th.jpeg" alt="Customer Image">
+        </div>
+        <div class="testimonial">
+            <p>"I love the taste of Spitfire! It's refreshing and gives me the energy to get through my workouts."</p>
+            <!-- Add your customer's image here -->
+            <img src="download.jpeg" alt="Customer Image">
+        </div>
+    </div>
+
+    <center> 
+        <p><a href="about us info.html"><b>click here to see more about SPITFIRE energy </b></a></p>
+    </center>
+
+
+
+</body>
+
+</html>
